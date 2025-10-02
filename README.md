@@ -108,8 +108,8 @@ flutter run
 
 | Light Theme                            | Dark Theme                           |
 | -------------------------------------- | ------------------------------------ |
-| ![Light](assets/images/screenshots/bmi (5).png) | ![Dark](assets/images/screenshots/bmi (1).png) |
-| ![Light](assets/images/screenshots/bmi (5).png) | ![Dark](assets/images/screenshots/bmi (2).png) |
+| ![Light](assets/images/screenshots/bmi(5).png) | ![Dark](assets/images/screenshots/bmi(1).png) |
+| ![Light](assets/images/screenshots/bmi(4).png) | ![Dark](assets/images/screenshots/bmi(2).png) |
 ---
 
 ## ⚡ Notes
