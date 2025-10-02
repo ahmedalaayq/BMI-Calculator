@@ -1,16 +1,14 @@
-// ignore_for_file: curly_braces_in_flow_control_structures
-
 import 'dart:math';
 
 enum Gender { male, female }
 
-class BMICalculator {
+class BmiModel {
   final double heightCm;
   final double weightKg;
   final int age;
   final Gender gender;
 
-  BMICalculator({
+  BmiModel({
     required this.heightCm,
     required this.weightKg,
     required this.age,
@@ -26,7 +24,7 @@ class BMICalculator {
     double bmi = calculateBMI();
     if (bmi < 18.5) {
       return arabic ? "نقص الوزن" : "Underweight";
-    } else
+    } else {
       switch (bmi) {
         case < 24.9:
           return arabic ? "طبيعي" : "Normal";
@@ -35,26 +33,28 @@ class BMICalculator {
         default:
           return arabic ? "سمنة" : "Obese";
       }
+    }
   }
 
   String getTip({bool arabic = false}) {
     double bmi = calculateBMI();
-    if (bmi < 18.5)
+    if (bmi < 18.5) {
       return arabic
           ? "حاول تناول طعام أكثر تغذية 🌱"
           : "Try to eat more nutritious food 🌱";
-    else if (bmi < 24.9)
+    } else if (bmi < 24.9) {
       return arabic
           ? "عمل رائع! استمر على المحافظة 🏋️"
           : "Great job! Keep maintaining 🏋️";
-    else if (bmi < 29.9)
+    } else if (bmi < 29.9) {
       return arabic
           ? "مارس الرياضة بانتظام وراقب نظامك الغذائي 🍎"
           : "Exercise regularly and watch diet 🍎";
-    else
+    } else {
       return arabic
           ? "استشر طبيب للحصول على التوجيه 🩺"
           : "Consult a doctor for guidance 🩺";
+    }
   }
 
   String getGenderText({bool arabic = false}) {

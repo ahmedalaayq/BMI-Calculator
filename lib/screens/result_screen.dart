@@ -3,10 +3,10 @@
 import 'package:bmi_calc/generated/l10n.dart';
 import 'package:bmi_calc/main.dart';
 import 'package:flutter/material.dart';
-import 'bmi_calculator.dart';
+import 'bmi_model.dart';
 
 class ResultScreen extends StatelessWidget {
-  final BMICalculator bmiCalc;
+  final BmiModel bmiCalc;
 
   const ResultScreen({super.key, required this.bmiCalc});
 

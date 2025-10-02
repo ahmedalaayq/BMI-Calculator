@@ -4,7 +4,7 @@ import 'package:bmi_calc/core/theme/theme_manager.dart';
 import 'package:bmi_calc/generated/l10n.dart';
 import 'package:bmi_calc/main.dart';
 import 'package:flutter/material.dart';
-import 'bmi_calculator.dart';
+import 'bmi_model.dart';
 import 'result_screen.dart';
 
 class BmiScreen extends StatefulWidget {
@@ -143,7 +143,7 @@ class _BmiScreenState extends State<BmiScreen> {
                 minimumSize: const Size(double.infinity, 50),
               ),
               onPressed: () {
-                final bmiCalc = BMICalculator(
+                final bmiCalc = BmiModel(
                   heightCm: height,
                   weightKg: weight,
                   age: age,
