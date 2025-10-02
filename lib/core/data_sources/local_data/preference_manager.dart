@@ -3,8 +3,8 @@ import 'package:shared_preferences/shared_preferences.dart';
 class PreferenceManager {
   static SharedPreferences? _prefs;
 
-  static initPrefs() async {
-    _prefs ??= await SharedPreferences.getInstance();
+   static Future<SharedPreferences> initPrefs() async {
+    return _prefs ??= await SharedPreferences.getInstance();
   }
 
   static Future<void> setData<T>({required String key, required T value}) async {
@@ -25,13 +25,13 @@ class PreferenceManager {
     final SharedPreferences pref = await initPrefs();
 
     if (T == String) {
-      return pref.getString(key) as T;
+      return pref.getString(key) as T?;
     } else if (T == int) {
-      return pref.getInt(key) as T;
+      return pref.getInt(key) as T?;
     } else if (T == bool) {
-      return pref.getBool(key) as T;
+      return pref.getBool(key) as T?;
     } else {
-      return pref.getDouble(key) as T;
+      return pref.getDouble(key) as T?;
     }
   }
 
