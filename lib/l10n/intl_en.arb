@@ -1,0 +1,41 @@
+{
+  "@@locale": "en",
+  "appTitle": "BMI Calculator",
+  "heightLabel": "Height (cm)",
+  "weightLabel": "Weight (kg)",
+  "ageLabel": "Age",
+  "genderMale": "Male",
+  "genderFemale": "Female",
+  "calculateButton": "Calculate BMI",
+  "recalculateButton": "Recalculate",
+  "bmiText": "BMI:",
+  "resultScreen": "Result Screen",
+  "categoryText": "Category: {category}",
+  "@categoryText": {
+    "placeholders": {
+      "category": {}
+    }
+  },
+  "tipText": "Tip: {tip}",
+  "@tipText": {
+    "placeholders": {
+      "tip": {}
+    }
+  },
+  "ageText": "Age: {age} years",
+  "@ageText": {
+    "placeholders": {
+      "age": {}
+    }
+  },
+  "genderText": "Gender: {gender}",
+  "@genderText": {
+    "placeholders": {
+      "gender": {}
+    }
+  },
+  "underweight": "Underweight",
+  "normal": "Normal",
+  "overweight": "Overweight",
+  "obese": "Obese"
+}

@@ -1,0 +1,41 @@
+{
+  "@@locale": "ar",
+  "appTitle": "حاسبة مؤشر كتلة الجسم",
+  "heightLabel": "الطول (سم)",
+  "weightLabel": "الوزن (كغ)",
+  "ageLabel": "العمر",
+  "genderMale": "ذكر",
+  "genderFemale": "أنثى",
+  "calculateButton": "احسب مؤشر الكتلة",
+  "recalculateButton": "أعد الحساب",
+  "bmiText": "مؤشر الكتلة:",
+  "resultScreen" : "شاشة النتيجة",
+  "categoryText": "التصنيف: {category}",
+  "@categoryText": {
+    "placeholders": {
+      "category": {}
+    }
+  },
+  "tipText": "نصيحة: {tip}",
+  "@tipText": {
+    "placeholders": {
+      "tip": {}
+    }
+  },
+  "ageText": "العمر: {age} سنة",
+  "@ageText": {
+    "placeholders": {
+      "age": {}
+    }
+  },
+  "genderText": "النوع: {gender}",
+  "@genderText": {
+    "placeholders": {
+      "gender": {}
+    }
+  },
+  "underweight": "نقص الوزن",
+  "normal": "طبيعي",
+  "overweight": "زيادة الوزن",
+  "obese": "سمنة"
+}
