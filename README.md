@@ -111,10 +111,3 @@ flutter run
 | ![Light](assets/images/screenshots/bmi(5).png) | ![Dark](assets/images/screenshots/bmi(1).png) |
 | ![Light](assets/images/screenshots/bmi(4).png) | ![Dark](assets/images/screenshots/bmi(2).png) |
 ---
-
-## ⚡ Notes
-
-* Ensure all **assets (images/icons)** are correctly placed in `assets/` and declared in `pubspec.yaml`.
-* For iOS icons, replace manually in `ios/Runner/Assets.xcassets/AppIcon.appiconset/`.
-* For Android icons, replace manually in `android/app/src/main/res/mipmap-*/`.
----
