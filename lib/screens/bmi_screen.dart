@@ -4,7 +4,7 @@ import 'package:bmi_calc/core/theme/theme_manager.dart';
 import 'package:bmi_calc/generated/l10n.dart';
 import 'package:bmi_calc/main.dart';
 import 'package:flutter/material.dart';
-import 'bmi_model.dart';
+import 'models/bmi_model.dart';
 import 'result_screen.dart';
 
 class BmiScreen extends StatefulWidget {
