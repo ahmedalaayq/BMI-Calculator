@@ -1,5 +1,6 @@
 // ignore_for_file: curly_braces_in_flow_control_structures
 
+import 'package:bmi_calc/core/localization_manager.dart';
 import 'package:bmi_calc/generated/l10n.dart';
 import 'package:bmi_calc/main.dart';
 import 'package:flutter/material.dart';
@@ -35,7 +36,8 @@ class ResultScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    bool isArabic = localeNotifier.value.languageCode == 'ar' ? true : false;
+    bool isArabic = LocalizationManager.isArabic;
+    
     final double bmi = bmiCalc.calculateBMI();
     final String category = bmiCalc.getBMICategory(arabic: isArabic);
     final String tip = bmiCalc.getTip(arabic: isArabic);

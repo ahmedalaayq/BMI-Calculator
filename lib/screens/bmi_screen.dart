@@ -1,8 +1,6 @@
-import 'package:bmi_calc/core/data_sources/local_data/preference_keys.dart';
-import 'package:bmi_calc/core/data_sources/local_data/preference_manager.dart';
+import 'package:bmi_calc/core/localization_manager.dart';
 import 'package:bmi_calc/core/theme/theme_manager.dart';
 import 'package:bmi_calc/generated/l10n.dart';
-import 'package:bmi_calc/main.dart';
 import 'package:flutter/material.dart';
 import 'models/bmi_model.dart';
 import 'result_screen.dart';
@@ -19,23 +17,6 @@ class _BmiScreenState extends State<BmiScreen> {
   double weight = 40;
   int age = 15;
   Gender? selectedGender;
-
-  _changeLocale() async {
-    if (localeNotifier.value.languageCode == 'ar') {
-      localeNotifier.value = const Locale('en');
-      await PreferenceManager.setData<String>(
-        key: PreferenceKeys.locale,
-        value: 'en',
-      );
-    } else {
-      localeNotifier.value = const Locale('ar');
-      await PreferenceManager.setData<String>(
-        key: PreferenceKeys.locale,
-        value: 'ar',
-      );
-    }
-  }
-
   @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
@@ -53,9 +34,9 @@ class _BmiScreenState extends State<BmiScreen> {
               color: Colors.white,
             ),
           ),
-          IconButton(
-            onPressed: _changeLocale,
-            icon: const Icon(Icons.language, color: Colors.white),
+          const IconButton(
+            onPressed: LocalizationManager.changeLocale,
+            icon: Icon(Icons.language, color: Colors.white),
           ),
         ],
         centerTitle: true,
