@@ -69,7 +69,12 @@ class _BmiScreenState extends State<BmiScreen> {
       ),
       body: Padding(
         padding: const EdgeInsets.all(20),
-        child: Column(
+        child: CustomScrollView(
+          physics: const BouncingScrollPhysics(),
+          slivers: [
+            SliverFillRemaining(
+              hasScrollBody: false,
+              child: Column(
           children: [
             // Gender
             Row(
@@ -177,6 +182,9 @@ class _BmiScreenState extends State<BmiScreen> {
             const Spacer(),
           ],
         ),
+            )
+          ],
+        )
       ),
     );
   }
