@@ -54,6 +54,10 @@ lib/
  │   └─ theme/
  │       ├─ dark_theme.dart
  │       └─ light_theme.dart
+ ├─ data_sources/
+ │   └─ local_data/
+ │       ├─ preference_keys.dart
+ │       └─ preference_manager.dart
  ├─ screens/
  │   ├─ bmi_screen.dart
  │   └─ result_screen.dart

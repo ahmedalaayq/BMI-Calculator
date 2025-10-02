@@ -1,3 +1,5 @@
+import 'package:bmi_calc/core/data_sources/local_data/preference_keys.dart';
+import 'package:bmi_calc/core/data_sources/local_data/preference_manager.dart';
 import 'package:bmi_calc/core/theme/theme_manager.dart';
 import 'package:bmi_calc/generated/l10n.dart';
 import 'package:bmi_calc/main.dart';
@@ -18,13 +20,19 @@ class _BmiScreenState extends State<BmiScreen> {
   int age = 15;
   Gender? selectedGender;
 
-  _changeLocale() {
+  _changeLocale() async {
     if (localeNotifier.value.languageCode == 'ar') {
       localeNotifier.value = const Locale('en');
-      pref!.setString('locale', 'en');
+      await PreferenceManager.setData<String>(
+        key: PreferenceKeys.locale,
+        value: 'en',
+      );
     } else {
       localeNotifier.value = const Locale('ar');
-      pref!.setString('locale', 'ar');
+      await PreferenceManager.setData<String>(
+        key: PreferenceKeys.locale,
+        value: 'ar',
+      );
     }
   }
 
